@@ -22,41 +22,41 @@ A public (no auth) endpoint to get a list of paginated tours by the travel slug 
 
 
 **Models**
-Users
-ID
-Email
-Password
-Roles (M2M relationship)
+Users \
+ID \
+Email \
+Password \
+Roles (M2M relationship) \
 
 **Roles**
-ID
-Name
+ID \
+Name \
 
 **Travels**
-ID
-Is Public (bool)
-Slug
-Name
-Description
-Number of days
-Number of nights (virtual, computed by numberOfDays - 1)
+ID \
+Is Public (bool) \
+Slug \
+Name \
+Description \
+Number of days \
+Number of nights (virtual, computed by numberOfDays - 1) \
 
 **Tours**
-ID
-Travel ID (M2O relationship)
-Name
-Starting date
-Ending date
-Price (integer, see below)
+ID \
+Travel ID (M2O relationship) \
+Name \
+Starting date \
+Ending date \
+Price (integer, see below) \
 
 # Notes
-1.Feel free to use the native Laravel authentication.
-2.We use UUIDs as primary keys instead of incremental IDs, but it's not required for you to use them, although highly appreciated;
-3.Tours prices are integer multiplied by 100: for example, €999 euro will be 99900, but, when returned to Frontends, they will be formatted (99900 / 100);
-4.Tours names inside the samples are a kind-of what we use internally, but you can use whatever you want;
-5.Every admin user will also have the editor role;
-6.Every creation endpoint, of course, should create one and only one resource. You can't, for example, send an array of resource to create;
-7.Usage of php-cs-fixer and larastan are a plus;
-8.Creating docs is big plus;
-9.Feature tests are a big big plus.
+1.Feel free to use the native Laravel authentication. \
+2.We use UUIDs as primary keys instead of incremental IDs, but it's not required for you to use them, although highly appreciated; \
+3.Tours prices are integer multiplied by 100: for example, €999 euro will be 99900, but, when returned to Frontends, they will be formatted (99900 / 100); \
+4.Tours names inside the samples are a kind-of what we use internally, but you can use whatever you want; \
+5.Every admin user will also have the editor role; \
+6.Every creation endpoint, of course, should create one and only one resource. You can't, for example, send an array of resource to create; \
+7.Usage of php-cs-fixer and larastan are a plus; \
+8.Creating docs is big plus; \
+9.Feature tests are a big big plus. \
 
