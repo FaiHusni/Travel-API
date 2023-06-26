@@ -26,11 +26,11 @@ Users \
 ID \
 Email \
 Password \
-Roles (M2M relationship) \
+Roles (M2M relationship) 
 
 **Roles**
 ID \
-Name \
+Name 
 
 **Travels**
 ID \
@@ -39,7 +39,7 @@ Slug \
 Name \
 Description \
 Number of days \
-Number of nights (virtual, computed by numberOfDays - 1) \
+Number of nights (virtual, computed by numberOfDays - 1) 
 
 **Tours**
 ID \
@@ -47,7 +47,7 @@ Travel ID (M2O relationship) \
 Name \
 Starting date \
 Ending date \
-Price (integer, see below) \
+Price (integer, see below) 
 
 # Notes
 1.Feel free to use the native Laravel authentication. \
@@ -58,5 +58,5 @@ Price (integer, see below) \
 6.Every creation endpoint, of course, should create one and only one resource. You can't, for example, send an array of resource to create; \
 7.Usage of php-cs-fixer and larastan are a plus; \
 8.Creating docs is big plus; \
-9.Feature tests are a big big plus. \
+9.Feature tests are a big big plus. 
 
